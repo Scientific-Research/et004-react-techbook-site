@@ -14,13 +14,10 @@ function App() {
             <li>{item.title}</li>
           ))}
         </ul> */}
-        
-          
-            {techbooks.map((item) => {
-              return(<Techbook/>)
-            })}
-        
 
+        {techbooks.map((x) => {
+          return <Techbook item={x} />;
+        })}
       </div>
     </div>
   );
