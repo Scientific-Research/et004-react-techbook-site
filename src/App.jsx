@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>There are {techbooks.length} Tech Books</h1>
-      <div className="book">
+      <div className="books">
         {/* <p>{techbooks.map((item) => item.title)}</p> */}
         {/* <ul>
           {techbooks.map((item) => (
@@ -15,7 +15,12 @@ function App() {
         </ul> */}
 
         {techbooks.map((item) => {
-          return <div>{item.title}</div>;
+          return (
+            <div className="book">
+              <div className="title">{item.title}</div>
+              <div className="description">{item.description}</div>
+            </div>
+          );
         })}
       </div>
     </div>

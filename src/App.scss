@@ -8,8 +8,15 @@ body {
     color: rgb(213, 213, 118);
   }
 
-  .book {
-    margin: 1rem;
-    padding: 1rem;
+  .books {
+    .book {
+      background-color: #222;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      .title {
+        color: rgb(213, 172, 95);
+        font-size: 1.5rem;
+      }
+    }
   }
 }
