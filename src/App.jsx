@@ -1,5 +1,6 @@
 import "./App.scss";
 import techbooks from "./data/techbooks.json";
+import { Techbook } from "./components/Techbook";
 
 console.log(techbooks);
 function App() {
@@ -13,15 +14,13 @@ function App() {
             <li>{item.title}</li>
           ))}
         </ul> */}
+        
+          
+            {techbooks.map((item) => {
+              return(<Techbook/>)
+            })}
+        
 
-        {techbooks.map((item) => {
-          return (
-            <div className="book">
-              <div className="title">{item.title}</div>
-              <div className="description">{item.description}</div>
-            </div>
-          );
-        })}
       </div>
     </div>
   );
